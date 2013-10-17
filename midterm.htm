@@ -81,9 +81,12 @@
 		 // Problem 1
 
 		var courseName = 'Dynamic HTML with JavaScript';
-		var daysinMarch = '31';
+		//JG: A number type is preferred
+		var daysinMarch = 31;
 		var knowJavaScript = true;
-		var webdeveloperSalary = '$77,990 annually';
+		//JG: A number type is preferred
+		// var webdeveloperSalary = '$77,990 annually';
+		var webdeveloperSalary = 77990;
 		var bestrestauntsRocville;
 
 		bestrestauntsRocville = [
@@ -97,60 +100,78 @@
 		];
 
 
-		 //* Problem 2
+		 // Problem 2
 
-
-		var drink = $20 * 0.25 + 20;
-		var smartphone = $400 * 0.15;
+		//JG: You don't want to have $ signs in front of integers
+		var drink = (20 * 0.25) + 20; //JG: Use parentheses to make precedence clearer
+		var smartphone = 400 * 0.15;
 		var subSandwitches = 5 * 4;
-		var dinner = $75 / 5;
+		var dinner = 75 / 5;
+		var multiplicationResult = 0.1 * 0.2;
 		//JG: Try to avoid using document.write
 		// document.write(Math.round(0.1 * 0.2));
 
-		console.log($20 * 0.25 + 20);
-		console.log($400 * 0.15);
-		console.log($5 * 4);
-		console.log(0.1 * 0.2);
+		//JG: It would've made more sense to use the variables
+		// console.log($20 * 0.25 + 20);
+		// console.log($400 * 0.15);
+		// console.log($5 * 4);
+		// console.log(0.1 * 0.2);
 
 		 // Problem 3
 
-		if (editor === 'Eclipse') {
-			return 'Java developer';
-		}
+
+		//JG: This needed to be a function in order to use the return statement
+
+		function editorResponse(editor) {
+			if (editor === 'Eclipse') {
+				return 'Java developer';
+			}
+
+			if (editor === 'Aptana Studio') {
+				return "Web developer";
+			}
+
+			if (editor === 'Sublime Text') {
+				return 'I am awesome';
+			}
+
+			if (editor === 'Notepad') {
+				return 'Wrong editor';
+			}
 		}
 
-		if (editor === 'Aptana Studio') {
-			return "Web developer";
-		}
-
-		if (editor === 'Sublime') {
-			return 'I am awesome';
-		} else if (editor === 'Notepad') {
-			return 'Wrong editor';
-
-		}
-
-		console.log('editor');
+		console.log(editorResponse('Eclipse'));
+		console.log(editorResponse('Aptana Studio'));
+		console.log(editorResponse('Sublime Text'));
+		console.log(editorResponse('Notepad'));
 
 
 		 // Problem 4
+		var i;
 
-		for (i = 5; i < 15; i++) {
-			x += 'a Number';
+		//JG: The loop needs to include 15 which it previously didn't
+		for (i = 5; i <= 15; i++) {
+			// x += 'a Number';
+			console.log(i);
 		}
 
 		console.log(x);
 
 
-		 // Problem 5
-		function average('num1', 'num2', 'num3') {
+		// Problem 5
+		//JG: Having single quotes around argument names throws an error
+		function average(num1, num2, num3) {
 			average = ('num1' + 'num2' + 'num3') / 3;
 			return average;
 		}
 
-		 // Problem 6
-		var JavaScriptHardship = 'The hardest thing about JavaScript is the different alternative eays as to writing variables and making sure that your syntax is corrent not to cause an error.';
+		// Problem 6
+		var javaScriptHardship = 'The hardest thing about JavaScript is the different alternative eays as to writing variables and making sure that your syntax is corrent not to cause an error.';
 		
+		//JG: Always be sure to check the console to make sure your code isn't throwing 
+		// any fatal errors. If you see any errors, review the line number where the code
+		// is breaking.
+
 	</script>
 
 </body>
