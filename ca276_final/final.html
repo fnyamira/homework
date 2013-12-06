@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <title>Final</title>
+  <link rel="stylesheet" href="final.css">
+  <script type="text/javascript" src="final.js" ></script>
+</head>
+<body>
+  <h2>Conference Registration Form</h2>
+ 
+  <form id="theForm" method="get" action="">
+    <table>
+    <tr>
+      <td>First Name<span class="red">*</span></td>
+      <td><input type="text" id="name" name="name" value="Fiona" /></td>
+      <td id="nameError" class="red">&nbsp;</td></tr>
+    <tr>
+    <td>Last Name<span class="red">*</span></td>
+      <td><input type="text" id="name" name="name" value="Scott"/></td>
+      <td id="nameError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Zipcode<span class="red">*</span></td>
+      <td><input type="text" id="zipcode" name="zipcode" /></td>
+      <td id="zipcodeError" class="red">&nbsp;</td></tr>
+    <tr>
+    <td>Email<span class="red">*</span></td>
+      <td><input type="text" id="email" name="email" value="fiona@scott.com"/></td>
+      <td id="emailError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Experience Level<span class="red">*</span></td>
+      <td><select id="levels" name="country">
+            <option value="" selected>Please select...</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select><br /></td>
+      <td id="levelsError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Bio<span class="red">*</span></td>
+      <td><textarea id="bio">I currently working three jobs and having a full time school schedule. I'm trying hard to learn coding concepts so I may only have one job.. </textarea></td><br>
+      <td id="bioError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Home Phone<span class="red">*</span></td>
+      <td><input type="text" id="homephone" name="homephone" /></td>
+      <td id="homephoneError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Mobile Phone<span class="red">*</span></td>
+      <td><input type="text" id="mobilephone" name="mobilephone" /></td>
+      <td id="mobilephoneError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Meal Preference<span class="red">*</span></td>
+      <td><input type="radio" name="meal" value="a la carte" checked/>A la carte<br>
+          <input type="radio" name="meal" value="gluten intolerance meal" />Gluten intolerance meal
+         <br>
+         <input type="radio" name="meal" value="kosher" />Kosher<br>
+         <input type="radio" name="meal" value="jain meal" />Jain meal<br>
+         <input type="radio" name="meal" value="muslim" />Muslim<br>
+         <input type="radio" name="meal" value="vegetarian" />Vegetarian<br>
+         <input type="radio" name="meal" value="vegan" />Vegan<br></td>
+      <td id="mealError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Skills<span class="red">*</span></td>
+      <td><input type="checkbox" name="skills" value="html" checked/>HTML<br>
+          <input type="checkbox" name="skills" value="css" checked/>CSS<br>
+          <input type="checkbox" name="skills" value="javascript" checked/>JavaScript<br>
+          <input type="checkbox" name="skills" value="jquery" />jQuery<br>
+          <input type="checkbox" name="skills" value="dojo" />Dojo<br>
+          <input type="checkbox" name="skills" value="prototype" />Prototype<br>
+          <input type="checkbox" name="skills" value="flash" />Flash<br>
+          <input type="checkbox" name="skills" value="flex" />Flex<br></td>
+      <td id="skillsError" class="red">&nbsp;</td></tr>
+    <tr><br>
+      <td>Expected Arrival Date<span class="red">*</span></td>
+      <td><form action="../demo_forms.asp"><input type="date" name="arrival"><br>
+        </form></td></tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" value="SEND" id="submit"/>&nbsp;
+          <input type="reset" value="CLEAR" id="reset"/></td>
+      <td>&nbsp;</td></tr>
+  </form>
+</body>
+</html>
